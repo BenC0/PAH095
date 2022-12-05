@@ -1,0 +1,32 @@
+.pah95_loaded {
+	& .mega-menu-level1-kitten__header.active span {
+		color: #d9755d;
+	}
+	& .mega-menu-level1-puppy__header.active span {
+		color: #C7AAD1;
+	}
+
+	& .mega-menu-level1-puppy__header.active ~ .mega-menu-level1-puppy__content,
+	& .mega-menu-level1-kitten__header.active ~ .mega-menu-level1-kitten__content {
+		& .mega-menu-level1__list {
+			padding-left: 0;
+			padding-bottom: 0;
+
+			& .mega-menu-level1__item {
+				display: flex;
+				width: 100%;
+				min-height: 2.375rem;
+
+				&:not(:first-of-type)::before {
+					display: block;
+					position: absolute;
+					content: "";
+					height: 1px;
+					background-color: #d7d8da;
+					width: calc(100% + 45px);
+					left: -1.40625rem;
+				}
+			}
+		}
+	}
+}
